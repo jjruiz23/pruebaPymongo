@@ -3,7 +3,7 @@
 # import update
 # import delete
 
-def run():
+def run():  # principal funtion
 
     Bienvenida = '''BIENVENIDO
         1) INSERT
@@ -13,21 +13,22 @@ def run():
         '''
     print(Bienvenida)
 
-    menu()
+    menu()  # llamar funcion
 
 
-def menu():
+def menu(): # funcion 
 
-    verificador = True
+    verificador = True  # controlador del while
 
     while verificador:
-        mensaje = '''Seleccione una opcion : '''
+        mensaje = 'Seleccione una opcion : '
 
-        opc = int(input(mensaje))
+        opc = int(input(mensaje))   # captura de dato con mensaje
 
+        #switch
         if opc == 1:
             print('INSERTANDO')
-            verificador = False
+            verificador = False # terminar ciclo while
             #insert.insert()
         elif opc == 2:
             print('ACTUALIZANDO')
@@ -44,8 +45,6 @@ def menu():
         else:
             print('Opcion invalida \r\n')
 
-
-
-
+# entry point
 if __name__ == '__main__':
-    run()
+    run()   # principal function
