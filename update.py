@@ -4,15 +4,15 @@ from pymongo import mongo_client    # libreria para manejo de mongo mediante pyt
 client = mongo_client('localhost:27017')    # creo la conexion
 db = client.EmployeeData    # creo la base pasando  los datos  conexion.nombre de nueva base
 
-def update():
-
-    try:
-        criterio = input('\n Enter id to update \n')
+def update():   # funcion
+    # manejo de errores o excepciones
+    try:    # hrealice
+        criterio = input('\n Enter id to update \n')    # captura de datos
         name = input('\n Enter name to update \n')
         age = input('\n Enter age to update \n')
         country = input('\n Enter country to update \n')
 
-        db.Employees.update_one(
+        db.Employees.update_one(    # base.documento.metodo({criterio a buscar},{$set {datos nuevos}})
             {'id': criterio},
             {
                 '$set': {
