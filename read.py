@@ -1,7 +1,6 @@
-from platform import platform
-from pymongo import mongo_client    # libreria para manejo de mongo mediante python
+from pymongo import MongoClient    # libreria para manejo de mongo mediante python
 
-client = mongo_client('localhost:27017')    # creo la conexion
+client = MongoClient('localhost:27017')    # creo la conexion
 db = client.EmployeeData    # creo la base pasando  los datos  conexion.nombre de nueva base
 
 def read(): # funcion

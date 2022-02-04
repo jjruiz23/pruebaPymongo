@@ -1,7 +1,7 @@
-# import insert
-# import read
-# import update
-# import delete
+import insert
+import read
+import update
+import delete
 
 def run():  # principal funtion
 
@@ -16,7 +16,7 @@ def run():  # principal funtion
     menu()  # llamar funcion
 
 
-def menu(): # funcion 
+def menu(): # funcion
 
     verificador = True  # controlador del while
 
@@ -29,19 +29,19 @@ def menu(): # funcion
         if opc == '1':
             print('INSERTANDO')
             verificador = False # terminar ciclo while
-            #insert.insert()
+            insert.insert()
         elif opc == '2':
             print('ACTUALIZANDO')
             verificador = False
-            #read.read()
+            read.read()
         elif opc == '3':
             print('LEYENDO')
             verificador = False
-            #update.update()
+            update.update()
         elif opc == '4':
             print('ELIMINANDO')
             verificador = False
-            #delete.delete()
+            delete.delete()
         elif opc == '': # si esta vacia
             pass    # linea vacia
         else:
