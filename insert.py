@@ -1,4 +1,3 @@
-from platform import platform
 from pymongo import mongo_client
 
 client = mongo_client('localhost:27017')
