@@ -23,25 +23,27 @@ def menu(): # funcion
     while verificador:
         mensaje = 'Seleccione una opcion : '
 
-        opc = int(input(mensaje))   # captura de dato con mensaje
+        opc = input(mensaje)   # captura de dato con mensaje
 
         #switch
-        if opc == 1:
+        if opc == '1':
             print('INSERTANDO')
             verificador = False # terminar ciclo while
             #insert.insert()
-        elif opc == 2:
+        elif opc == '2':
             print('ACTUALIZANDO')
             verificador = False
             #read.read()
-        elif opc == 3:
+        elif opc == '3':
             print('LEYENDO')
             verificador = False
             #update.update()
-        elif opc == 4:
+        elif opc == '4':
             print('ELIMINANDO')
             verificador = False
             #delete.delete()
+        elif opc == '': # si esta vacia
+            pass    # linea vacia
         else:
             print('Opcion invalida \r\n')
 
