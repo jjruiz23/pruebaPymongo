@@ -15,7 +15,7 @@ def insert():   # funcion
         {
             'id': employee_id,
             'name': employee_name,
-            'couentry': employee_country,
+            'country': employee_country,
             'age': employee_age
 
         })

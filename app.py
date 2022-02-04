@@ -33,11 +33,12 @@ def menu(): # funcion
         elif opc == '2':
             print('ACTUALIZANDO')
             verificador = False
-            read.read()
+            update.update()
         elif opc == '3':
             print('LEYENDO')
             verificador = False
-            update.update()
+            read.read()
+            
         elif opc == '4':
             print('ELIMINANDO')
             verificador = False
