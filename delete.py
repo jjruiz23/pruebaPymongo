@@ -10,5 +10,5 @@ def delete():   # funcion
         criterio = input('\N Enter employed id to delete \n')   # captura de dato para borrar
         db.Employees.delete_many({'id': criterio})  # eliminar registro  base.documento.modulo(registro seleccionado)
         print('\n Deletion Successful \n')
-    except ImportError:
+    except ImportError: # manejo de errores por codigo
         platform_specific_module = None
