@@ -3,7 +3,7 @@ from pymongo import MongoClient    # libreria para manejo de mongo mediante pyth
 client = MongoClient('localhost:27017')    # creo la conexion
 db = client.EmployeeData    # creo la base pasando  los datos  conexion.nombre de nueva base
 
-def delete():   # funcion
+def delete():   # funcion de eliminar
     # manejo de errores o excepciones
     try:    # realice
         criterio = input('\n Enter employed id to delete \n')   # captura de dato para borrar
